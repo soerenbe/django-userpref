@@ -1,0 +1,9 @@
+{% for app, s in user_settings.items %}
+    <tr><td><b>{{ app }}</b></td></tr>
+    {% for key, value in s.items %}
+        <tr>
+        <td>{{ key }}</td><td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+{% endfor %}
+

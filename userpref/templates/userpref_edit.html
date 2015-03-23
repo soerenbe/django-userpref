@@ -1,11 +1,11 @@
-<h1>Missing userpref template 'userpref_edit.html</h1>
+<h1>Missing userpref template 'userpref_edit.html'</h1>
 You are seeing this because you dont have a 'userpref_edit.html' template.<br>
-Make sure you define on in include the form with
+Make sure you define one and include the form with
 <br>
 <p>
 {% verbatim myblock %}
-    {% include "userpref_edit_piece.html" %}
+    {% include "userpref_edit_block.html" %}
 {% endverbatim myblock %}
 </p>
 <h2>Meanwhile, here is your content for the form:</h2>
-{% include "userpref_edit_piece.html" %}
+{% include "userpref_edit_block.html" %}
