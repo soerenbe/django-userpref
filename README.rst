@@ -16,6 +16,8 @@ Basic usage
 Just define a abstract model that can be used in the applications.
 In you app you should define something like:
 
+.. code:: python
+
     from userpref.models import Userpref
 
     class MyappSettings(Userpref):
@@ -24,3 +26,12 @@ In you app you should define something like:
 
         class Meta:
             verbose_name = "My Custom Setting for app Myapp"
+
+
+In your application or template you can access the settings over the users attributes
+
+.. code:: html
+
+    {% if request.user.myappsettings.special_settings %}
+        You are special man!
+    {% endif %}
